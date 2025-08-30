@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"id": "fomc-reconfig-fix",
+	"version": "${version}",
+	"name": "fomc-reconfig-fix",
+	"description": "This mod lets you rejoin a reconfiguring server faster.",
+	"authors": [
+		"keziumoo"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/fomc-reconfig-fix/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.keziumo.fomcreconfigfix.Fomcreconfigfix"
+		],
+		"client": [
+			"dev.keziumo.fomcreconfigfix.FomcreconfigfixClient"
+		]
+	},
+	"mixins": [
+		"fomc-reconfig-fix.mixins.json",
+		{
+			"config": "fomc-reconfig-fix.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*",
+		"fabric-command-api-v2": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

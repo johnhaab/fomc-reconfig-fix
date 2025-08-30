@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "dev.keziumo.fomcreconfigfix.mixin.client",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"ReconfiguringScreenMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
